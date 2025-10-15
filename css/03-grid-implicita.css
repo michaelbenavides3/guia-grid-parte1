@@ -7,5 +7,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    /* grid-auto-rows:  1fr; */
+    /* grid-auto-rows:  1fr; con esta propiedad le damos altura a las celdas implicitas*/
+}
+
+.item{
+    border: solid 1.5px yellow;
 }
