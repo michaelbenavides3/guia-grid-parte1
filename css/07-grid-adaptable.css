@@ -1,0 +1,21 @@
+@import url(style.css);
+
+.grid-adaptable{
+    display: grid;
+    /* solamente funciona con grid-template-columns. con rows no funciona */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.grid-adaptable img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.grid-adaptable img:hover{
+    transform: scale(1.05);
+}
