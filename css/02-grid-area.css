@@ -1,0 +1,40 @@
+@import url(style.css);
+
+.grid-area{
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    grid-template-areas: "header header header header header header"
+                         "menu-lateral contenido-principal contenido-principal contenido-principal contenido-principal barra-noticias"
+                         "menu-lateral contenido-principal contenido-principal contenido-principal contenido-principal barra-noticias"
+                         "menu-lateral contenido-principal contenido-principal contenido-principal contenido-principal barra-noticias"
+                         "menu-lateral contenido-principal contenido-principal contenido-principal contenido-principal barra-noticias"
+                         "pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina pie-pagina";
+}
+
+.header{
+    grid-area: header;
+    background-color: yellow;
+}
+
+.menu-lateral{
+    grid-area: menu-lateral;
+    background-color: lime;
+}
+
+.pie-pagina{
+    grid-area: pie-pagina;
+    background-color: red;
+}
+
+.contenido-principal{
+    grid-area: contenido-principal;
+    background-color: skyblue;
+}
+
+.barra-noticias{
+    grid-area: barra-noticias;
+    background-color: rgb(225, 81, 4);
+}
