@@ -1,0 +1,29 @@
+@import url(style.css);
+
+.grid-flujo{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px 100px;
+
+    grid-auto-flow: column dense;
+
+    /* gird-auto-colums, le doy valor a las celdas implicitas que se crean por fuera de la explicita
+    enotnces reciben este valor por defecto */
+    grid-auto-columns: 200px;
+}
+
+.item:nth-child(3){
+    background-color: aquamarine;
+    grid-column: span 2;
+}
+
+.item:nth-child(10){
+    background-color: purple;
+    grid-row: span 2;
+}
+
+.item:nth-child(7){
+    background-color: brown;
+    grid-row: span 2;
+}
