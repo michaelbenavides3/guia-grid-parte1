@@ -1,0 +1,43 @@
+@import url(style.css);
+
+.grid-alineamiento{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* alinear en el eje x */
+    justify-items: center;
+    /* alinear eje y */
+    align-items: center;
+}
+
+.item:nth-child(2){
+    align-self: start;
+}
+.item:nth-child(6){
+    justify-self: right;
+}
+.item:nth-child(8){
+    align-self: end;
+}
+.item:nth-child(4){
+    justify-self: left;
+}
+.item:nth-child(1){
+    justify-self: end;
+    align-self: end;
+}
+.item:nth-child(3){
+    justify-self: start;
+    align-self: end;
+}
+
+.item:nth-child(7){
+    justify-self: end;
+    align-self: start;
+}
+.item:nth-child(9){
+    justify-self: start;
+    align-self: start;
+}
