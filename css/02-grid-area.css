@@ -15,26 +15,41 @@
 }
 
 .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: header;
     background-color: yellow;
-}
-
-.menu-lateral{
+  }
+  
+  .menu-lateral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: menu-lateral;
     background-color: lime;
-}
-
-.pie-pagina{
+  }
+  
+  .pie-pagina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: pie-pagina;
     background-color: red;
-}
-
-.contenido-principal{
+  }
+  
+  .contenido-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: contenido-principal;
     background-color: skyblue;
-}
-
-.barra-noticias{
+  }
+  
+  .barra-noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: barra-noticias;
     background-color: rgb(225, 81, 4);
 }
